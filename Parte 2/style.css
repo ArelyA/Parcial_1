@@ -1,42 +1,74 @@
 header {
 
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
 
 }
 
 
 h2 {
+  border-style: solid;
+  border-color: black;
+  width: 100%;
+  margin: 0.05em;
 
 }
 
 .nav {
 
+  display: flex;
+  justify-content: right;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
 
-  }
+}
 
   li {
 
+    border-style: solid;
+    border-color: black;
+    margin: 0.2em;
+    width: 100%;
 
   }
 
   .content{
+    display: flex;
+    border-style: solid;
+    border-color: black;
+
 
 }
 
   .aside {
-
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+    width: 30%;
   }
 
   .slidebox{
+    border-style: solid;
+    border-color: black;
 
    
   }
 
   .article{
-
+    display: flex;
+    
+    width: 70%;
   }
 
 
 .poem{
+  border-style: solid;
+  border-color: black;
 
 }
 
@@ -45,9 +77,11 @@ h2 {
   Screen = B/w 600px to 990px*/
   @media (min-width:600px) and (max-width: 990px)  {
     .article {
+      flex-direction: column;
 
   } 
 header{
+  display: none;
 
 }
 }
@@ -57,15 +91,26 @@ header{
 
 header,.content{
 
+  display: none;
+
 }
 
 .nav {
 
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
 
-  }
+}
 
 
 .nav > li {
+
+  border-style: solid;
+  border-color: black;
+  margin: 10% 1em;
 
 }
 
